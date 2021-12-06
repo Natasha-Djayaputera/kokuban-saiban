@@ -1,0 +1,7 @@
+# IDE
+.vscode
+
+# NPM
+node_modules
+
+notes.txt

@@ -1,0 +1,32 @@
+common folder is for monorepo
+
+in package.json you need to add
+  "workspaces": [
+    "common",
+    "server",
+    "web"
+  ]
+
+initialization command
+    yarn add -W typescript      //-W is to be made in the root package.json
+    yarn tsc --init
+    yarn install                // to add more package
+    yarn outdated               // to update the devDependencies
+
+    
+
+git:
+    yarn add -W commitizen
+    git config --global core.editor "code"
+    yarn add -DW commitizen
+    yarn commitizen init cz-conventional-changelog --save-dev --save-exact
+
+    git init
+    git log
+    git branch -M main
+    git log
+    git remote add origin https://github.com/Natasha-Djayaputera/kokuban-saiban.git
+    git add .
+    git commit -m ""
+    git push origin main
+
